@@ -13,6 +13,33 @@
   </head>
 
   <body onresize="zoomEffect()">
+    <div class="block-grid__item grid-item">
+            <p class="grid-item__title">
+              ${test_content[+type].first_slide_title}
+            </p>
+            <p class="grid-item__price"></p>
+
+            <div class="grid-item__images">
+            <img src="${img}" alt="Фото ноутбука" />
+            </div>
+          </div>
+          <div class="block-grid__item grid-item">
+            <p class="grid-item__title">
+              ${test_content[+type].second_slide_title}
+            </p>
+            <p class="grid-item__price modify">${test_content[+type].second_slide_paragraph}</p>
+            
+            <img src="${img}" alt="Фото ноутбука" 
+              class="grid-item__picture"/>
+          </div>
+          <div class="block-grid__item grid-item">
+            <p class="grid-item__title">
+              ${test_content[+type].third_slide_title}
+            </p>
+            <p class="grid-item__price modify">${test_content[+type].third_slide_price}</p>
+            
+            <img src="${img}" alt="Фото ноутбука" class="grid-item__absolute-image"/>`
+          </div>
     <header class="header">
       <div class="_container header__wrapper">
         <div class="header__flex flex header-flex">
